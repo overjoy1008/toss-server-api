@@ -14,7 +14,7 @@ app.use(cors({
 
 // TODO: 개발자센터에 로그인해서 내 결제위젯 연동 키 > 시크릿 키를 입력하세요. 시크릿 키는 외부에 공개되면 안돼요.
 // @docs https://docs.tosspayments.com/reference/using-api/api-keys
-const secretKey = "test_gsk_docs_OaPz8L5KdmQXkzRz3y47BMw6";
+const secretKey = "live_gsk_eqRGgYO1r5AklapJPw4orQnN2Eya";
 // const secretKey = "test_sk_26DlbXAaV0aPRGYOB9p5rqY50Q9R";
 
 // 토스페이먼츠 API는 시크릿 키를 사용자 ID로 사용하고, 비밀번호는 사용하지 않습니다.
