@@ -28,7 +28,7 @@ const encryptedSecretTestKey = "Basic " + Buffer.from(secretTestKey + ":").toStr
 app.post("/confirm", function (req, res) {
   const { paymentKey, orderId, amount } = req.body;
 
-  const isTestMode = req.body.testMode === true || paymentKey.startsWith("test_");
+  const isTestMode = paymentKey.startsWith("test_");
   const keyToUse = isTestMode ? encryptedSecretTestKey : encryptedSecretKey;
 
   // 결제 승인 API를 호출하세요.
